@@ -17,7 +17,6 @@ int main() {
 	cin >> q;
 	v1.resize(days_m[month], 0);
 
-
 	for (int j = 0; j < q; j++) {
 		cin >> cause;
 		if (cause == "ADD") {
@@ -36,12 +35,8 @@ int main() {
 				}
 				else if (v1[i - 1] == 0) {
 					cout << v1[i - 1] << endl;
-				}
-			
+				}			
 		}
-
-
-
 		else if (cause == "NEXT") {
 			month++;
 			if (month > 11) {
@@ -71,13 +66,8 @@ int main() {
 			else {
 				
 			}
-
-
-
 		}
 	}
-
-
 	return 0;
 }
 

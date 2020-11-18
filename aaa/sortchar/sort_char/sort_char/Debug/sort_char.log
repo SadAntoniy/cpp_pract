@@ -1,5 +1,0 @@
-﻿  Source.cpp
-C:\courseraproj\sortchar\sort_char\sort_char\Source.cpp(11,27): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\courseraproj\sortchar\sort_char\sort_char\Source.cpp(11,42): warning C4018: '>': signed/unsigned mismatch
-C:\courseraproj\sortchar\sort_char\sort_char\Source.cpp(27): warning C4715: 'lowcases': not all control paths return a value
-  sort_char.vcxproj -> C:\courseraproj\sortchar\sort_char\Debug\sort_char.exe

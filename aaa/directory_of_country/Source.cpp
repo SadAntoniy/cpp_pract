@@ -9,6 +9,7 @@ void PrintMap(const map<string, string>& map) {
 	}
 	cout << endl;
 }
+
 int main() {
 
 	map<string, string> directory_of_country;
@@ -37,11 +38,9 @@ int main() {
 				cout << "Country " << country << " has changed its capital from " << old_capital << " to " << capital << endl;
 
 			}
-			//directory_of_country[country].erase();
 		}
 		if (request == "RENAME") {
 
-			//for (const auto& c : directory_of_country) {
 			string old_country; //= c.first;
 			cin >> old_country >> country;
 
@@ -50,21 +49,13 @@ int main() {
 
 					cout << "Incorrect rename, skip" << endl;
 
-				}
-				
+				}				
 				else if (!directory_of_country.count(old_country)/*directory_of_country[old_country].empty()*/) {
 
 					//directory_of_country.erase(old_country);
 					cout << "Incorrect rename, skip" << endl;
 
 				}
-				/*else if(directory_of_country.count(old_country) == old_country){
-
-					directory_of_country[country] = directory_of_country[old_country];
-					directory_of_country.erase(old_country);
-					cout << "Country " << old_country << " with capital " << directory_of_country[country] << " has been renamed to " << country << endl;
-
-				}*/
 				else if(directory_of_country.count(country)){
 					cout << "Incorrect rename, skip" << endl;
 				}
@@ -73,10 +64,8 @@ int main() {
 					directory_of_country[country] = directory_of_country[old_country];
 					directory_of_country.erase(old_country);
 					cout << "Country " << old_country << " with capital " << directory_of_country[country] << " has been renamed to " << country << endl;
-
 				}
-			}
-			
+			}		
 		
 		if (request == "ABOUT") {
 			cin >> country;
@@ -92,15 +81,7 @@ int main() {
 				cout << "There are no countries in the world" << endl;
 			else
 				PrintMap(directory_of_country);
-			//for (const auto& m : directory_of_country) {
-			//	cout << m.first << "/" << m.second << " ";
-			//}
-
 		}
-
 	}
-
-
-
 	return 0;
 }
